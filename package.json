@@ -1,0 +1,56 @@
+{
+  "name": "text-diff-tool",
+  "version": "1.0.0",
+  "description": "A powerful text diff tool that identifies additions, removals, and rewordings",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "text-diff": "./dist/cli.js"
+  },
+  "scripts": {
+    "build": "tsc && vite build",
+    "build:server": "tsc",
+    "dev": "vite",
+    "dev:server": "tsc --watch",
+    "type-check": "tsc --noEmit",
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "test:ci": "npm run test -- --coverage",
+    "lint": "eslint src --ext .ts,.tsx",
+    "serve": "node dist/server.js"
+  },
+  "keywords": [
+    "diff",
+    "text-comparison",
+    "diff-tool"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^5.3.0",
+    "express": "^4.18.2",
+    "swagger-jsdoc": "^6.2.8",
+    "swagger-ui-express": "^5.0.0",
+    "helmet": "^7.1.0",
+    "monaco-editor": "^0.45.0",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "@monaco-editor/react": "^4.6.0"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.10.0",
+    "@types/react": "^18.2.0",
+    "@types/react-dom": "^18.2.0",
+    "@types/swagger-jsdoc": "^6.0.1",
+    "@types/swagger-ui-express": "^4.1.6",
+    "@typescript-eslint/eslint-plugin": "^6.13.0",
+    "@typescript-eslint/parser": "^6.13.0",
+    "@vitejs/plugin-react": "^4.2.0",
+    "eslint": "^8.54.0",
+    "eslint-plugin-react": "^7.33.0",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "jest": "^29.7.0",
+    "typescript": "^5.3.2",
+    "vite": "^5.0.0"
+  }
+}
